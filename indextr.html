@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор расхода топлива</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/89/89102.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="btnLanguage">
+        <a href="index.html">
+            <button class="turkish">RU</button>
+        </a>
+    </div>
+    <div id="container">
+        <h1>Yakıt tüketimi hesaplama</h1>    
+        <div id="information">
+            <div id="informationPerKm">
+                <h3>Veri giriniz</h3>
+                <p>Yakıt tüketimi(litre)</p>
+                <input id="spentFuel" type="text" placeholder="Kaç litre yakıt kullanıldı...">
+                <p>Mesafe (km)</p>
+                <input id="traveledDistance" type="text" placeholder="Mesafe giriniz...">
+                <p>Yakıtın fiyatı (TL/litre)</p>
+                <input id="fuelPrice" type="text" placeholder="Yakıtın fiyatı...">
+            </div>
+            <br>
+            <button id="btn">Hesapla</button>
+            <div id="informationPerDistance">
+                <h3>Hesaplama sonucu</h3>
+                <p>Ortalama yakıt tüketimi (litre/100km)</p>
+                <input id="averageConsumption" type="text">
+                <p>Fiyat 1 km.(TL/km)</p>
+                <input id="kmRub" type="text">
+            </div>
+        </div>
+    </div>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripttr.js"></script>
+</body>
+</html>
